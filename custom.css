@@ -46,6 +46,13 @@ body { background: var(--paper); color: var(--ink); }
   margin: 0 0 1.1rem;
   font-weight: 400;
 }
+.intro-motto {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  color: var(--accent);
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  margin: 0 0 1.1rem;
+}
 .intro-links {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
   font-size: 0.9rem;

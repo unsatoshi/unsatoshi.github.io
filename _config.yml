@@ -14,6 +14,9 @@ url: "https://unsatoshi.github.io"
 markdown: kramdown
 highlighter: rouge
 
+# Clean post URLs: https://unsatoshi.github.io/posts/title/
+permalink: /posts/:title/
+
 plugins: ['jekyll-paginate', 'jekyll-gist', 'jekyll-feed']
 
 paginate: 8

@@ -6,6 +6,8 @@ title: About
 
 <img class="user-avatar" src="{{ site.owner.avatar }}">
 
+*Trust God. Fuzz Code.*
+
 Independent smart contract security researcher focused on the EVM.
 
 I break protocols before attackers do — reentrancy, access control, oracle and
