@@ -21,9 +21,6 @@ plugins: ['jekyll-paginate', 'jekyll-gist', 'jekyll-feed']
 
 paginate: 8
 
-logo: logo.png
-disqus_shortname:
-
 rtl: false
 owner:
   name: notSatoshi
@@ -33,8 +30,3 @@ owner:
   # Social links shown in the footer — removed the ones you don't use.
   twitter: 0xunsatoshi
   github: https://github.com/unsatoshi
-
-# Analytics / webmaster — leave blank unless you set them up
-google_analytics:
-google_verify:
-bing_verify:

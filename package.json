@@ -1,6 +1,6 @@
 {
-  "name": "white-paper",
-  "version": "2.0.0",
+  "name": "unsatoshi-site",
+  "version": "1.0.0",
   "private": true,
   "devDependencies": {
     "rtlcss": "^4.3.0",

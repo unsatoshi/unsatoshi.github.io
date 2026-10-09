@@ -3,16 +3,17 @@
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
 {% if site.owner.twitter %}<!-- Twitter Card and Open Graph tags -->
-<meta name="twitter:title" content="{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.name }}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta name="twitter:creator" content="@{{ site.owner.twitter }}">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image:src" content="{% if page.image.thumb %}{{ site.url }}/images/{{ page.image.thumb }}{% else %}{{ site.url }}/images/{{ site.logo }}{% endif %}">{% endif %}
+<meta name="twitter:image:src" content="{{ site.owner.avatar }}">{% endif %}
 <meta property="og:type" content="article">
-<meta property="og:title" content="{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.name }}">
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:image" content="{{ site.owner.avatar }}">
 
 <!-- Webmaster Tools verfication -->
 {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
@@ -24,6 +25,8 @@
 {% if site.owner.google_plus %}<link rel="author" href="{{ site.owner.google_plus }}?rel=author">{% endif %}
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml" />
+<meta name="theme-color" content="#0d1117" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
