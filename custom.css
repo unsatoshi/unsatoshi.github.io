@@ -1,0 +1,139 @@
+/* ============================================================
+   notSatoshi — dark theme + hero overrides for White Paper.
+   Loaded AFTER dist/css/main.min.css so these rules win without
+   needing a Vite rebuild (GitHub Pages serves the prebuilt CSS).
+   ============================================================ */
+
+:root {
+  color-scheme: dark;
+
+  --paper:        #0d1117;   /* page background */
+  --paper-raised: #161b22;   /* cards / raised surfaces */
+  --ink:          #e6edf3;   /* primary text */
+  --ink-soft:     #9aa4af;   /* secondary text */
+  --ink-faint:    #6e7681;   /* dates, meta */
+  --line:         #21262d;   /* hairlines / borders */
+  --accent:       #36e27b;   /* brand green */
+  --accent-dark:  #2bbf68;   /* hover */
+  --code-bg:      #161b22;   /* inline code */
+}
+
+html { color-scheme: dark; }
+body { background: var(--paper); color: var(--ink); }
+
+::selection {
+  color: var(--ink);
+  background: color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+/* ---- Hero / intro block on the homepage ---- */
+.intro {
+  margin: 2.25rem 0 2.75rem;
+}
+.intro-kicker {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  color: var(--accent);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 0.75rem;
+}
+.intro-lead {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: var(--ink);
+  max-width: 44rem;
+  margin: 0 0 1.1rem;
+  font-weight: 400;
+}
+.intro-links {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.9rem;
+  margin: 0;
+}
+.intro-links a { color: var(--ink-soft); text-decoration: none; }
+.intro-links a:hover { color: var(--accent); }
+.intro-links span { color: var(--ink-faint); margin: 0 0.5rem; }
+
+/* ---- Post listing polish ---- */
+.post-date,
+.listing .post .post-date {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  color: var(--ink-faint);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+/* ---- Avatar on the About page ---- */
+.user-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  margin: 0.5rem 0 1.5rem;
+}
+
+/* ============================================================
+   Monokai syntax highlighting (dark) — overrides the light
+   "emacs" theme compiled into main.min.css.
+   ============================================================ */
+.highlight .hll { background-color: #49483e }
+.highlight  { background: #161b22; color: #f8f8f2; border: 1px solid var(--line); border-radius: var(--radius); }
+.highlight .c { color: #75715e }
+.highlight .err { color: #960050; background-color: #1e0010 }
+.highlight .k { color: #66d9ef }
+.highlight .l { color: #ae81ff }
+.highlight .n { color: #f8f8f2 }
+.highlight .o { color: #f92672 }
+.highlight .p { color: #f8f8f2 }
+.highlight .cm { color: #75715e }
+.highlight .cp { color: #75715e }
+.highlight .c1 { color: #75715e }
+.highlight .cs { color: #75715e }
+.highlight .ge { font-style: italic }
+.highlight .gs { font-weight: bold }
+.highlight .kc { color: #66d9ef }
+.highlight .kd { color: #66d9ef }
+.highlight .kn { color: #f92672 }
+.highlight .kp { color: #66d9ef }
+.highlight .kr { color: #66d9ef }
+.highlight .kt { color: #66d9ef }
+.highlight .ld { color: #e6db74 }
+.highlight .m { color: #ae81ff }
+.highlight .s { color: #e6db74 }
+.highlight .na { color: #a6e22e }
+.highlight .nb { color: #f8f8f2 }
+.highlight .nc { color: #a6e22e }
+.highlight .no { color: #66d9ef }
+.highlight .nd { color: #a6e22e }
+.highlight .ni { color: #f8f8f2 }
+.highlight .ne { color: #a6e22e }
+.highlight .nf { color: #a6e22e }
+.highlight .nl { color: #f8f8f2 }
+.highlight .nn { color: #f8f8f2 }
+.highlight .nx { color: #a6e22e }
+.highlight .py { color: #f8f8f2 }
+.highlight .nt { color: #f92672 }
+.highlight .nv { color: #f8f8f2 }
+.highlight .ow { color: #f92672 }
+.highlight .w { color: #f8f8f2 }
+.highlight .mf { color: #ae81ff }
+.highlight .mh { color: #ae81ff }
+.highlight .mi { color: #ae81ff }
+.highlight .mo { color: #ae81ff }
+.highlight .sb { color: #e6db74 }
+.highlight .sc { color: #e6db74 }
+.highlight .sd { color: #e6db74 }
+.highlight .s2 { color: #e6db74 }
+.highlight .se { color: #ae81ff }
+.highlight .sh { color: #e6db74 }
+.highlight .si { color: #e6db74 }
+.highlight .sx { color: #e6db74 }
+.highlight .sr { color: #e6db74 }
+.highlight .s1 { color: #e6db74 }
+.highlight .ss { color: #e6db74 }
+.highlight .bp { color: #f8f8f2 }
+.highlight .vc { color: #f8f8f2 }
+.highlight .vg { color: #f8f8f2 }
+.highlight .vi { color: #f8f8f2 }
+.highlight .il { color: #ae81ff }

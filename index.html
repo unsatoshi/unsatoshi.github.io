@@ -1,13 +1,25 @@
 ---
 layout: default
-title: A guide to your digital life
+title: Home
 ---
+<section class="intro">
+  <p class="intro-kicker">// EVM BUG HUNTER · SMART CONTRACT SECURITY</p>
+  <p class="intro-lead">Smart contract security research and bug bounty writeups — reentrancy, access control, oracle manipulation, and broken invariants.</p>
+  <p class="intro-links">
+    <a href="https://twitter.com/{{ site.owner.twitter }}" target="_blank" rel="noopener">X</a>
+    <span aria-hidden="true">·</span>
+    <a href="{{ site.owner.github }}" target="_blank" rel="noopener">GitHub</a>
+    <span aria-hidden="true">·</span>
+    <a href="{{ site.url }}/feed.xml">RSS</a>
+  </p>
+</section>
+
 <div class="listing">
-    {% for post in paginator.posts %}
+  {% for post in paginator.posts %}
     <div class="post other link">
-      <h2></span> <a href="{{site.url}}{{post.url}}">{{ post.title }}</a></h2>
+      <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
       <p class="post-date">{{ post.date | date_to_string }}</p>
       {{ post.excerpt }}
     </div>
-    {% endfor %}
+  {% endfor %}
 </div>
